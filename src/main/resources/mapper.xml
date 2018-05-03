@@ -1,0 +1,9 @@
+<!DOCTYPE mapper     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Mapper">
+    <select id="getMyBatisById" parameterType="java.lang.Integer" resultType="MyBatis">
+          select * from mybatis where id = #{id}
+</select>
+<select id="getMyBatis" resultType="MyBatis">
+select * from mybatis
+</select>
+        </mapper>
